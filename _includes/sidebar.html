@@ -1,0 +1,9 @@
+<h3>About me</h3>
+
+<p>My name is Jonathan Zhu and I am currently a student at Columbia University studying Computer Science.</p>
+
+<ul>
+	{% for post in site.posts limit:5 %}
+	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+</ul>
